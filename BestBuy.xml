@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test  name="Chrome">
-	  <parameter name="browser" value="Chrome"></parameter>
-     <classes>
-      <class name="com.BestBuy.test.SignUpTest"/>
-    </classes>
-  </test> <!-- Test -->
- 
-</suite> <!-- Suite -->
+	<test name="Chrome">
+		<parameter name="browser" value="Chrome"></parameter>
+		<!-- <parameter name="browser" value="Edge"></parameter>-->
+		<classes>
+			<class name="com.test.AddedItemsCartTest" />
+			<class name="com.test.BottomLinksTest"></class>
+			<class name="com.test.AddedItemsCartTest" />
+			<class name="com.test.SignUpTest" />
+			<class name="com.test.MenuTitlesTest" />
+			<class name="com.test.SignInTest" />
+			<!--<class name="com.test.PaymentPageTest"/>-->
+		</classes>
+	</test>
+	<!--	
+	Test -->
+</suite> <!--
+Suite -->
