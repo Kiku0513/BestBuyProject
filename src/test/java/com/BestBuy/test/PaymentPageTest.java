@@ -23,7 +23,7 @@ public class PaymentPageTest
 			try
 			{
 				Reports.setTCDesc("Validating ItemsAddedToCart functionality of BestBuy");
-				se.launchBrowser("https://www.bestbuy.com");
+				se.launchBrowser();
 				w3.paymentcard("1234567890123456","komal","Nikame","Sukhwani Scarlet","pune","AP","41222");
 				String act="Please enter a valid card number.";
 				String exp=driver.findElement(By.xpath("//*[contains(text(),'Please enter a valid card number.')]")).getText();

@@ -1,5 +1,6 @@
 package com.BestBuy.test;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
@@ -24,8 +25,10 @@ public class NegativeTc_SignUp
 			us.uSPageTest();
 			w3.signUpBestBuy("" ,"Nikame", "komalnikame93333@gmail.com","Kiku@05144323","Kiku@0251323","(555) 555-1234");
 			se.screenshot("InValidCredSignUp1");
-			w3.signUpBestBuy("11111" ,"22222", "93333@gmail.com","05144323","0251323","(555) 555-1234");
+			se.navigateBack();
+			w3.signUpBestBuy("11111" ,"kame", "93333@gmail.com","K0514323","0251323","(555) 555-1234");
 			se.screenshot("SignUpWithNumbers");
+			Assert.assertFalse(true);
 
 		}
 		catch(Exception ex)

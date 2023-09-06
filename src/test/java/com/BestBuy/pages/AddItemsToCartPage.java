@@ -112,6 +112,7 @@ public class AddItemsToCartPage extends SeWrappers
 		se.actionClick(addProduct3);
 		Thread.sleep(2000);
 		se.actionClick(goToCart);
+		se.screenshot("AddedItemsToCart");
 		se.actionClick(cancelbtn3);
 		Thread.sleep(2000);
 		se.actionClick(checkout);
@@ -121,7 +122,7 @@ public class AddItemsToCartPage extends SeWrappers
 		se.actionClick(textBox);
 		se.verifySelected(textBox);
 		se.actionClick(cntnBtn);
-		se.screenshotOfWebElement(errormsg,"AddedItemsToCart");
+		
 	}
 
 

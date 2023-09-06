@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="16" passed="8" failed="0" skipped="0">
+<testng-results ignored="13" total="22" passed="9" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-06T12:08:44 IST" name="Suite" finished-at="2023-09-06T12:20:47 IST" duration-ms="723540">
+  <suite started-at="2023-09-06T20:27:46 IST" name="Suite" finished-at="2023-09-06T20:38:39 IST" duration-ms="653319">
     <groups>
-      <group name="Sanity">
-        <method signature="MenuTitlesTest.MenuTitlesValid()[pri:3, instance:com.test.MenuTitlesTest@1a75e76a]" name="MenuTitlesValid" class="com.test.MenuTitlesTest"/>
-      </group> <!-- Sanity -->
-      <group name="Retesting">
-        <method signature="AddedItemsCartTest.ItemsAddedCartTestWithInvalidCredentials()[pri:0, instance:com.test.AddedItemsCartTest@3ba987b8]" name="ItemsAddedCartTestWithInvalidCredentials" class="com.test.AddedItemsCartTest"/>
-        <method signature="SignInTest.signInWithInValidCredentials()[pri:0, instance:com.test.SignInTest@5524cca1]" name="signInWithInValidCredentials" class="com.test.SignInTest"/>
-        <method signature="SignUpTest.signUpWithInValidCredentials()[pri:0, instance:com.test.SignUpTest@33bc72d1]" name="signUpWithInValidCredentials" class="com.test.SignUpTest"/>
-      </group> <!-- Retesting -->
-      <group name="Regression">
-        <method signature="SignInTest.signInWithValidCredentials()[pri:0, instance:com.test.SignInTest@5524cca1]" name="signInWithValidCredentials" class="com.test.SignInTest"/>
-        <method signature="SignUpTest.signUpWithValidCredentials()[pri:2, instance:com.test.SignUpTest@33bc72d1]" name="signUpWithValidCredentials" class="com.test.SignUpTest"/>
-        <method signature="AddedItemsCartTest.ItemsAddedCartTest()[pri:5, instance:com.test.AddedItemsCartTest@3ba987b8]" name="ItemsAddedCartTest" class="com.test.AddedItemsCartTest"/>
-      </group> <!-- Regression -->
-      <group name="Smoke">
-        <method signature="BottomLinksTest.bottomLinksValid()[pri:4, instance:com.test.BottomLinksTest@273444fe]" name="bottomLinksValid" class="com.test.BottomLinksTest"/>
-      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2023-09-06T12:08:44 IST" name="Chrome" finished-at="2023-09-06T12:20:47 IST" duration-ms="723540">
-      <class name="com.test.BottomLinksTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.test.BottomLinksTest@273444fe]" started-at="2023-09-06T12:11:26 IST" name="launchBrowser" finished-at="2023-09-06T12:11:27 IST" duration-ms="1264" status="PASS">
+    <test started-at="2023-09-06T20:27:46 IST" name="Positive" finished-at="2023-09-06T20:35:22 IST" duration-ms="456321">
+      <class name="com.BestBuy.test.MenuTitlesTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.BestBuy.test.MenuTitlesTest@6440112d]" started-at="2023-09-06T20:29:26 IST" name="setUp" finished-at="2023-09-06T20:29:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,39 +17,22 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="bottomLinksValid()[pri:4, instance:com.test.BottomLinksTest@273444fe]" started-at="2023-09-06T12:11:27 IST" name="bottomLinksValid" finished-at="2023-09-06T12:13:29 IST" duration-ms="122211" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bottomLinksValid -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.test.BottomLinksTest@273444fe]" started-at="2023-09-06T12:13:29 IST" name="closeBrowser" finished-at="2023-09-06T12:13:29 IST" duration-ms="212" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.test.BottomLinksTest -->
-      <class name="com.test.MenuTitlesTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.test.MenuTitlesTest@1a75e76a]" started-at="2023-09-06T12:17:16 IST" name="launchBrowser" finished-at="2023-09-06T12:17:17 IST" duration-ms="1131" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="MenuTitlesValid()[pri:3, instance:com.test.MenuTitlesTest@1a75e76a]" started-at="2023-09-06T12:17:17 IST" name="MenuTitlesValid" finished-at="2023-09-06T12:19:07 IST" duration-ms="110446" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="MenuTitlesValid()[pri:0, instance:com.BestBuy.test.MenuTitlesTest@6440112d]" started-at="2023-09-06T20:29:26 IST" name="MenuTitlesValid" finished-at="2023-09-06T20:31:25 IST" duration-ms="119389" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MenuTitlesValid -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.test.MenuTitlesTest@1a75e76a]" started-at="2023-09-06T12:19:07 IST" name="closeBrowser" finished-at="2023-09-06T12:19:07 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.BestBuy.test.MenuTitlesTest@6440112d]" started-at="2023-09-06T20:31:25 IST" name="closeBrowser" finished-at="2023-09-06T20:31:26 IST" duration-ms="538" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.test.MenuTitlesTest -->
-      <class name="com.test.SignUpTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.test.SignUpTest@33bc72d1]" started-at="2023-09-06T12:13:29 IST" name="launchBrowser" finished-at="2023-09-06T12:13:31 IST" duration-ms="1171" status="PASS">
+        <test-method is-config="true" signature="closeAllBrowsers()[pri:0, instance:com.BestBuy.test.MenuTitlesTest@6440112d]" started-at="2023-09-06T20:31:26 IST" name="closeAllBrowsers" finished-at="2023-09-06T20:31:26 IST" duration-ms="380" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeAllBrowsers -->
+      </class> <!-- com.BestBuy.test.MenuTitlesTest -->
+      <class name="com.BestBuy.test.BrokenLinkTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.BestBuy.test.BrokenLinkTest@48075da3]" started-at="2023-09-06T20:27:46 IST" name="setUp" finished-at="2023-09-06T20:27:46 IST" duration-ms="11" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,16 +42,18 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="signUpWithInValidCredentials()[pri:0, instance:com.test.SignUpTest@33bc72d1]" started-at="2023-09-06T12:13:31 IST" name="signUpWithInValidCredentials" finished-at="2023-09-06T12:16:38 IST" duration-ms="187509" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="uSPageTest()[pri:0, instance:com.BestBuy.test.BrokenLinkTest@48075da3]" started-at="2023-09-06T20:27:46 IST" name="uSPageTest" finished-at="2023-09-06T20:28:10 IST" duration-ms="23861" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signUpWithInValidCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.test.SignUpTest@33bc72d1]" started-at="2023-09-06T12:16:38 IST" name="closeBrowser" finished-at="2023-09-06T12:16:38 IST" duration-ms="174" status="PASS">
+        </test-method> <!-- uSPageTest -->
+        <test-method is-config="true" signature="closeAllBrowsers()[pri:0, instance:com.BestBuy.test.BrokenLinkTest@48075da3]" started-at="2023-09-06T20:28:10 IST" name="closeAllBrowsers" finished-at="2023-09-06T20:28:10 IST" duration-ms="559" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.test.SignUpTest@33bc72d1]" started-at="2023-09-06T12:16:38 IST" name="launchBrowser" finished-at="2023-09-06T12:16:39 IST" duration-ms="1167" status="PASS">
+        </test-method> <!-- closeAllBrowsers -->
+      </class> <!-- com.BestBuy.test.BrokenLinkTest -->
+      <class name="com.BestBuy.test.AddedItemsCartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.BestBuy.test.AddedItemsCartTest@7c137fd5]" started-at="2023-09-06T20:33:28 IST" name="setUp" finished-at="2023-09-06T20:33:28 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -94,66 +63,22 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="signUpWithValidCredentials()[pri:2, instance:com.test.SignUpTest@33bc72d1]" started-at="2023-09-06T12:16:39 IST" name="signUpWithValidCredentials" finished-at="2023-09-06T12:17:15 IST" duration-ms="35998" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signUpWithValidCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.test.SignUpTest@33bc72d1]" started-at="2023-09-06T12:17:15 IST" name="closeBrowser" finished-at="2023-09-06T12:17:16 IST" duration-ms="302" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.test.SignUpTest -->
-      <class name="com.test.AddedItemsCartTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.test.AddedItemsCartTest@3ba987b8]" started-at="2023-09-06T12:08:44 IST" name="startReport" finished-at="2023-09-06T12:08:44 IST" duration-ms="233" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.test.AddedItemsCartTest@3ba987b8]" started-at="2023-09-06T12:08:44 IST" name="launchBrowser" finished-at="2023-09-06T12:08:49 IST" duration-ms="4833" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="ItemsAddedCartTestWithInvalidCredentials()[pri:0, instance:com.test.AddedItemsCartTest@3ba987b8]" started-at="2023-09-06T12:08:49 IST" name="ItemsAddedCartTestWithInvalidCredentials" finished-at="2023-09-06T12:09:31 IST" duration-ms="42524" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ItemsAddedCartTestWithInvalidCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.test.AddedItemsCartTest@3ba987b8]" started-at="2023-09-06T12:09:31 IST" name="closeBrowser" finished-at="2023-09-06T12:09:31 IST" duration-ms="120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.test.AddedItemsCartTest@3ba987b8]" started-at="2023-09-06T12:09:31 IST" name="launchBrowser" finished-at="2023-09-06T12:09:33 IST" duration-ms="1404" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="ItemsAddedCartTest()[pri:5, instance:com.test.AddedItemsCartTest@3ba987b8]" started-at="2023-09-06T12:09:33 IST" name="ItemsAddedCartTest" finished-at="2023-09-06T12:11:26 IST" duration-ms="112921" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="ItemsAddedCartTest()[pri:0, instance:com.BestBuy.test.AddedItemsCartTest@7c137fd5]" started-at="2023-09-06T20:33:28 IST" name="ItemsAddedCartTest" finished-at="2023-09-06T20:35:21 IST" duration-ms="113025" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ItemsAddedCartTest -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.test.AddedItemsCartTest@3ba987b8]" started-at="2023-09-06T12:11:26 IST" name="closeBrowser" finished-at="2023-09-06T12:11:26 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.BestBuy.test.AddedItemsCartTest@7c137fd5]" started-at="2023-09-06T20:35:21 IST" name="closeBrowser" finished-at="2023-09-06T20:35:21 IST" duration-ms="308" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.test.AddedItemsCartTest@3ba987b8]" started-at="2023-09-06T12:20:47 IST" name="endReport" finished-at="2023-09-06T12:20:48 IST" duration-ms="323" status="PASS">
+        <test-method is-config="true" signature="closeAllBrowsers()[pri:0, instance:com.BestBuy.test.AddedItemsCartTest@7c137fd5]" started-at="2023-09-06T20:35:21 IST" name="closeAllBrowsers" finished-at="2023-09-06T20:35:22 IST" duration-ms="673" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endReport -->
-      </class> <!-- com.test.AddedItemsCartTest -->
-      <class name="com.test.SignInTest">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.test.SignInTest@5524cca1]" started-at="2023-09-06T12:19:07 IST" name="launchBrowser" finished-at="2023-09-06T12:19:08 IST" duration-ms="1170" status="PASS">
+        </test-method> <!-- closeAllBrowsers -->
+      </class> <!-- com.BestBuy.test.AddedItemsCartTest -->
+      <class name="com.BestBuy.test.BottomLinksTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.BestBuy.test.BottomLinksTest@231f98ef]" started-at="2023-09-06T20:31:26 IST" name="setUp" finished-at="2023-09-06T20:31:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -163,16 +88,22 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="signInWithInValidCredentials()[pri:0, instance:com.test.SignInTest@5524cca1]" started-at="2023-09-06T12:19:08 IST" name="signInWithInValidCredentials" finished-at="2023-09-06T12:20:13 IST" duration-ms="64515" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="bottomLinksValid()[pri:0, instance:com.BestBuy.test.BottomLinksTest@231f98ef]" started-at="2023-09-06T20:31:26 IST" name="bottomLinksValid" finished-at="2023-09-06T20:33:27 IST" duration-ms="121367" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signInWithInValidCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.test.SignInTest@5524cca1]" started-at="2023-09-06T12:20:13 IST" name="closeBrowser" finished-at="2023-09-06T12:20:13 IST" duration-ms="255" status="PASS">
+        </test-method> <!-- bottomLinksValid -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.BestBuy.test.BottomLinksTest@231f98ef]" started-at="2023-09-06T20:33:27 IST" name="closeBrowser" finished-at="2023-09-06T20:33:28 IST" duration-ms="331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:com.test.SignInTest@5524cca1]" started-at="2023-09-06T12:20:13 IST" name="launchBrowser" finished-at="2023-09-06T12:20:14 IST" duration-ms="1072" status="PASS">
+        <test-method is-config="true" signature="closeAllBrowsers()[pri:0, instance:com.BestBuy.test.BottomLinksTest@231f98ef]" started-at="2023-09-06T20:33:28 IST" name="closeAllBrowsers" finished-at="2023-09-06T20:33:28 IST" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeAllBrowsers -->
+      </class> <!-- com.BestBuy.test.BottomLinksTest -->
+      <class name="com.BestBuy.test.SignInTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.BestBuy.test.SignInTest@5890e879]" started-at="2023-09-06T20:28:44 IST" name="setUp" finished-at="2023-09-06T20:28:44 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -182,16 +113,87 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-        <test-method signature="signInWithValidCredentials()[pri:0, instance:com.test.SignInTest@5524cca1]" started-at="2023-09-06T12:20:14 IST" name="signInWithValidCredentials" finished-at="2023-09-06T12:20:47 IST" duration-ms="32685" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="signInWithValidCredentials()[pri:0, instance:com.BestBuy.test.SignInTest@5890e879]" started-at="2023-09-06T20:28:44 IST" name="signInWithValidCredentials" finished-at="2023-09-06T20:29:25 IST" duration-ms="41393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signInWithValidCredentials -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.test.SignInTest@5524cca1]" started-at="2023-09-06T12:20:47 IST" name="closeBrowser" finished-at="2023-09-06T12:20:47 IST" duration-ms="378" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.BestBuy.test.SignInTest@5890e879]" started-at="2023-09-06T20:29:25 IST" name="closeBrowser" finished-at="2023-09-06T20:29:25 IST" duration-ms="349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- com.test.SignInTest -->
-    </test> <!-- Chrome -->
+        <test-method is-config="true" signature="closeAllBrowsers()[pri:0, instance:com.BestBuy.test.SignInTest@5890e879]" started-at="2023-09-06T20:29:25 IST" name="closeAllBrowsers" finished-at="2023-09-06T20:29:26 IST" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeAllBrowsers -->
+      </class> <!-- com.BestBuy.test.SignInTest -->
+      <class name="com.BestBuy.test.SignUpTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.BestBuy.test.SignUpTest@413d1baf]" started-at="2023-09-06T20:28:10 IST" name="setUp" finished-at="2023-09-06T20:28:10 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="signUpWithValidCredentials()[pri:0, instance:com.BestBuy.test.SignUpTest@413d1baf]" started-at="2023-09-06T20:28:10 IST" name="signUpWithValidCredentials" finished-at="2023-09-06T20:28:43 IST" duration-ms="32568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithValidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.BestBuy.test.SignUpTest@413d1baf]" started-at="2023-09-06T20:28:43 IST" name="closeBrowser" finished-at="2023-09-06T20:28:43 IST" duration-ms="343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="closeAllBrowsers()[pri:0, instance:com.BestBuy.test.SignUpTest@413d1baf]" started-at="2023-09-06T20:28:43 IST" name="closeAllBrowsers" finished-at="2023-09-06T20:28:44 IST" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeAllBrowsers -->
+      </class> <!-- com.BestBuy.test.SignUpTest -->
+    </test> <!-- Positive -->
+    <test started-at="2023-09-06T20:35:22 IST" name="Negative" finished-at="2023-09-06T20:38:39 IST" duration-ms="196921">
+      <class name="com.BestBuy.test.NegativeTc_SignUp">
+        <test-method signature="signUpWithInValidCredentials()[pri:0, instance:com.BestBuy.test.NegativeTc_SignUp@673fdbce]" started-at="2023-09-06T20:37:15 IST" name="signUpWithInValidCredentials" finished-at="2023-09-06T20:38:39 IST" duration-ms="84322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signUpWithInValidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.BestBuy.test.NegativeTc_SignUp@673fdbce]" started-at="2023-09-06T20:38:39 IST" name="closeBrowser" finished-at="2023-09-06T20:38:39 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.BestBuy.test.NegativeTc_SignUp -->
+      <class name="com.BestBuy.test.BrokenLinkTest">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.BestBuy.test.BrokenLinkTest@48075da3]" started-at="2023-09-06T20:27:45 IST" name="startReport" finished-at="2023-09-06T20:27:46 IST" duration-ms="589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.BestBuy.test.BrokenLinkTest@48075da3]" started-at="2023-09-06T20:38:39 IST" name="endReport" finished-at="2023-09-06T20:38:40 IST" duration-ms="600" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- com.BestBuy.test.BrokenLinkTest -->
+      <class name="com.BestBuy.test.NegativeTc_ItemsAddedToCart">
+        <test-method signature="ItemsAddedCartTestWithInvalidCredentials()[pri:0, instance:com.BestBuy.test.NegativeTc_ItemsAddedToCart@1a245833]" started-at="2023-09-06T20:36:28 IST" name="ItemsAddedCartTestWithInvalidCredentials" finished-at="2023-09-06T20:37:14 IST" duration-ms="46481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ItemsAddedCartTestWithInvalidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.BestBuy.test.NegativeTc_ItemsAddedToCart@1a245833]" started-at="2023-09-06T20:37:14 IST" name="closeBrowser" finished-at="2023-09-06T20:37:15 IST" duration-ms="307" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.BestBuy.test.NegativeTc_ItemsAddedToCart -->
+      <class name="com.BestBuy.test.NegativeTc_SignIn">
+        <test-method signature="signInWithInValidCredentials()[pri:0, instance:com.BestBuy.test.NegativeTc_SignIn@4007f65e]" started-at="2023-09-06T20:35:22 IST" name="signInWithInValidCredentials" finished-at="2023-09-06T20:36:27 IST" duration-ms="65094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInWithInValidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:com.BestBuy.test.NegativeTc_SignIn@4007f65e]" started-at="2023-09-06T20:36:27 IST" name="closeBrowser" finished-at="2023-09-06T20:36:28 IST" duration-ms="696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.BestBuy.test.NegativeTc_SignIn -->
+    </test> <!-- Negative -->
   </suite> <!-- Suite -->
 </testng-results>

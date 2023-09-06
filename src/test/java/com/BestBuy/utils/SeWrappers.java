@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Set;
 
 import javax.imageio.ImageIO;
-
+import org.openqa.selenium.edge.EdgeOptions;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
@@ -24,6 +24,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -37,45 +38,50 @@ import java.net.URL;
 public class SeWrappers extends Reports  //BestBuy
 {
 	public static WebDriver driver=null;
-	@BeforeMethod
-	@Parameters({"browser"})
-	public void launchBrowser(String browsername)
+
+	static String browsername;
+
+	@BeforeClass
+	@Parameters("browser")
+	public void setUp(String browser)
+	{
+
+		this.browsername = browser;
+	}
+	public void launchBrowser()
 	{
 		try
 		{
-			ChromeOptions opt=new ChromeOptions();
-			opt.addArguments("--disable-notifications");
-
 			if(browsername.equalsIgnoreCase("chrome"))
 			{
-				driver=new ChromeDriver(opt);	
+				ChromeOptions opt=new ChromeOptions();
+				opt.addArguments("--disable-notifications");
+				driver=new ChromeDriver(opt);
 			}
-			else if(browsername.equalsIgnoreCase("edge"))
+			else
 			{
-				driver=new EdgeDriver();
+				EdgeOptions opt=new EdgeOptions();
+				opt.addArguments("--disable-notifications");
+				driver=new EdgeDriver(opt);
 			}
-			else if(browsername.equalsIgnoreCase("Firefox"))
-			{
-				driver=new FirefoxDriver();
-			}
+
 
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-			driver.get(browsername);
+			driver.get("https://www.bestbuy.com/");
 			Reports.reportStep("PASS", "The chrome browser launched successfully with the given url ("+browsername+")");
 
 		}
-
 		catch(Exception ex)
 		{
-			//System.out.println("Problem in launching the browser");
+			System.out.println("Problem in launching the browser");
 			Reports.reportStep("FAIL", "Problem while launching the chrome browser with the given url ("+browsername+")");
 			ex.printStackTrace();
 		}
 	}
 
 
-
+    @AfterMethod
 	public void closeAllBrowsers()
 	{
 		try

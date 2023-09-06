@@ -4,6 +4,7 @@
 	<test name="Positive">
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
+
 			<class name="com.BestBuy.test.BrokenLinkTest" />
 			<class name="com.BestBuy.test.SignUpTest" />
 			<class name="com.BestBuy.test.SignInTest" />
@@ -11,7 +12,7 @@
 			<class name="com.BestBuy.test.BottomLinksTest" />
 			<class name="com.BestBuy.test.AddedItemsCartTest" />
 
-			<!--<class name="com.BestBuy.test.PaymentPageTest"/>-->
+			<class name="com.BestBuy.test.PaymentPageTest" />
 		</classes>
 	</test>
 	<test name="Negative">

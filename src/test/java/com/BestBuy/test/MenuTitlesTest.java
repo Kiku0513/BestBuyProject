@@ -15,7 +15,7 @@ public class MenuTitlesTest extends SeWrappers
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
 	BrokenLinkTest us=new BrokenLinkTest();
-	@Test(priority=4)
+	@Test
 
 	public void MenuTitlesValid()
 	{
@@ -27,7 +27,7 @@ public class MenuTitlesTest extends SeWrappers
 			String act="Meet the new My Best Buy Memberships™.";
 			String except=driver.findElement(By.xpath("//*[contains(text(),'Meet the new My Best Buy Memberships™.')]")).getText();
 			Assert.assertEquals(act, except);
-			se.closeAllBrowsers();
+			
 		}
 		catch(Exception ex)
 		{

@@ -15,13 +15,13 @@ public class SignInTest extends SeWrappers
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
 	BrokenLinkTest us=new BrokenLinkTest();
-	@Test(priority=3)
+	@Test
 
 	public void signInWithValidCredentials()
 	{
 		try
 		{
-			Reports.setTCDesc("Validating SignIn of BestBuy functionality with valid credentials");
+			Reports.setTCDesc("Validating Login of BestBuy functionality with valid credentials");
 			us.uSPageTest();
 			w3.signIn("komalnikame933@gmail.com", "Kiku@051323");
 			String act="Oops! The email or password did not match our records. Please try again.";

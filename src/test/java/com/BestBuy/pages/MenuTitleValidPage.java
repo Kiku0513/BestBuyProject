@@ -8,59 +8,26 @@ import com.BestBuy.utils.SeWrappers;
 public class MenuTitleValidPage  extends SeWrappers
 {
 	//top deal title
-	@FindBy(xpath="//a[text()='Top Deals']")
+	@FindBy(xpath="//*[@class='bottom-nav']//*[contains(text(),'Top Deals')][1]")
 	WebElement topdeal;
 
-
-	@FindBy(xpath="//a[text()='Deal of the Day']")
+	@FindBy(xpath="//*[contains(text(),'Deal of the Day')][1]")
 	WebElement dealOfDay;
 
-	@FindBy(xpath="//a[text()='My Best Buy Memberships']")
+	@FindBy(xpath="//*[contains(text(),'My Best Buy Memberships')][1]")
 	WebElement mbmb;
 
 
 	SeWrappers se=new SeWrappers();
-	public void menuTitleValid()
+	public void menuTitleValid() throws InterruptedException
 	{
-
-
-		click(topdeal);
-		String expectedTitle="Top Deals and Featured Offers on Electronics - Best Buy";
-		if(driver.getTitle().startsWith(expectedTitle))
-		{
-			System.out.println("title is validated");
-		}
-		else
-		{
-			System.out.println("title is not validated");
-		}
+		se.actionClick(topdeal);
 		se.screenshot("Top Deals");
-	
 
-		click(dealOfDay);
-		expectedTitle="Deal of the Day: Electronics Deals - Best Buy";
-		if(driver.getTitle().startsWith(expectedTitle))
-		{
-			System.out.println("title is validated");
-		}
-		else
-		{
-			System.out.println("title is not validated");
-		}
+		Thread.sleep(2000);
+		se.actionClick(dealOfDay);
 		se.screenshot("Deal of the day");
-		
-
-
 		se.actionClick(mbmb);
-		expectedTitle="My Best Buy Memberships";
-		if(driver.getTitle().startsWith(expectedTitle))
-		{
-			System.out.println("title is validated");
-		}
-		else
-		{
-			System.out.println("title is not validated");
-		}
 		se.screenshot("Membership");
 	}
 

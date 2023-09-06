@@ -14,7 +14,7 @@ public class BottomLinksTest  extends SeWrappers
 	SeWrappers se=new  SeWrappers();
 	BrokenLinkTest us=new BrokenLinkTest();
 	
-	@Test(priority=5)
+	@Test
 	public void bottomLinksValid()
 	{
 		try

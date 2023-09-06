@@ -13,12 +13,12 @@ public class NegativeTc_ItemsAddedToCart
 	SeWrappers se= new SeWrappers();
 	BrokenLinkTest us=new BrokenLinkTest();
 
-	@Test(groups="Retesting")
+	@Test
 	public void ItemsAddedCartTestWithInvalidCredentials()
 	{
 		try
 		{
-			Reports.setTCDesc("Validating ItemsAddedToCart functionality of BestBuy");
+			Reports.setTCDesc("Validating ItemsAddedToCart functionality of BestBuy with invalidCred");
 			us.uSPageTest();
 			w3.searchItems("");
 			se.screenshot("Search_Item_With_EmptyText");

@@ -17,7 +17,7 @@ public class SignUpTest extends SeWrappers
 	SeWrappers se= new SeWrappers();
 	BrokenLinkTest us=new BrokenLinkTest();
 
-	@Test(priority=2)
+	@Test
 	public void signUpWithValidCredentials()
 	{
 		try

@@ -15,7 +15,7 @@ public class AddedItemsCartTest extends SeWrappers
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
 	BrokenLinkTest us=new BrokenLinkTest();
-	@Test(priority=6)
+	@Test
 	public void ItemsAddedCartTest()
 	{
 		try

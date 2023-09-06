@@ -19,10 +19,11 @@ public class NegativeTc_SignIn
 	{
 		try
 		{
-			Reports.setTCDesc("Validating SignIn of BestBuy functionality with In valid credentials");
+			Reports.setTCDesc("Validating SignIn of BestBuy functionality with Invalid credentials");
 			us.uSPageTest();
 			w3.signIn("komalnikame93333333@gmail.com", "Kiku@0513234444");
 			se.screenshot("SignIn_InValidCred");
+			se.navigateBack();
 			w3.signIn("", "");
 			se.screenshot("SignInWithEmptyText");
 
