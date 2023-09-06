@@ -14,8 +14,8 @@ public class SignInTest extends SeWrappers
 
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	UsTest us=new UsTest();
-	@Test(groups={"Regression"})
+	BrokenLinkTest us=new BrokenLinkTest();
+	@Test(priority=3)
 
 	public void signInWithValidCredentials()
 	{

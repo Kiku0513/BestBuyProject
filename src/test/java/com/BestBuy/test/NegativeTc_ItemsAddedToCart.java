@@ -11,7 +11,7 @@ public class NegativeTc_ItemsAddedToCart
 {
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	UsTest us=new UsTest();
+	BrokenLinkTest us=new BrokenLinkTest();
 
 	@Test(groups="Retesting")
 	public void ItemsAddedCartTestWithInvalidCredentials()

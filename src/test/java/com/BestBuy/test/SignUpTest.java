@@ -15,9 +15,9 @@ public class SignUpTest extends SeWrappers
 
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	UsTest us=new UsTest();
+	BrokenLinkTest us=new BrokenLinkTest();
 
-
+	@Test(priority=2)
 	public void signUpWithValidCredentials()
 	{
 		try

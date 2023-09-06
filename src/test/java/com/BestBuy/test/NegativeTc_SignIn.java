@@ -11,7 +11,7 @@ public class NegativeTc_SignIn
 {	
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	UsTest us=new UsTest();
+	BrokenLinkTest us=new BrokenLinkTest();
 
 
 	@Test

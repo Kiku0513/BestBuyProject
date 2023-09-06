@@ -8,13 +8,13 @@ import com.BestBuy.utils.BestBuyWrappers;
 import com.BestBuy.utils.Reports;
 import com.BestBuy.utils.SeWrappers;
 
-public class UsTest extends SeWrappers
+public class BrokenLinkTest extends SeWrappers
 {
 
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
 
-	@Test
+	@Test(priority=1)
 
 	public void uSPageTest()
 	{

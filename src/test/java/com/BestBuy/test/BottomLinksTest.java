@@ -12,9 +12,9 @@ public class BottomLinksTest  extends SeWrappers
 {
 	BestBuyWrappers w3=new BestBuyWrappers ();
 	SeWrappers se=new  SeWrappers();
-	UsTest us=new UsTest();
+	BrokenLinkTest us=new BrokenLinkTest();
 	
-	@Test(groups={"Smoke"},priority=4)
+	@Test(priority=5)
 	public void bottomLinksValid()
 	{
 		try
