@@ -30,14 +30,14 @@ public class BrokenLinkTest extends SeWrappers
 		catch(Exception ex)
 		{
 			ex.printStackTrace();
-			System.out.println("Fail to SignUp");
+			System.out.println("Fail to Vlidate BrokenLinkUrl");
 			Reports.reportStep("FAIL", "Problem while login");
 
 
 		}
 	}
 
-/*	@AfterMethod
+	@AfterMethod
 	public void closeBrowser()
 	{
 		try
@@ -52,5 +52,5 @@ public class BrokenLinkTest extends SeWrappers
 			ex.printStackTrace();
 		}
 	}
-	*/
+	
 }

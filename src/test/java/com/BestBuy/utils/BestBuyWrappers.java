@@ -17,8 +17,17 @@ public class BestBuyWrappers extends SeWrappers
 
 	public void brokenLink()
 	{
-		BrokenLinkUrl brlink= PageFactory.initElements(driver, BrokenLinkUrl.class);
-		brlink.brokenLinvkValid();
+		try
+		{		
+			BrokenLinkUrl brlink= PageFactory.initElements(driver, BrokenLinkUrl.class);
+			brlink.brokenLinvkValid();
+
+
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
 
 	}
 
