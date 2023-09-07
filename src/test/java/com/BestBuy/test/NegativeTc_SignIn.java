@@ -11,7 +11,6 @@ public class NegativeTc_SignIn
 {	
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	MainPageClick mp=new MainPageClick ();
 
 	@Test
 	public void signInWithInValidCredentials()
@@ -19,7 +18,7 @@ public class NegativeTc_SignIn
 		try
 		{
 			Reports.setTCDesc(" SignIn of BestBuy functionality with Invalid credentials");
-			mp.mainPageClick();
+			se.launchBrowser();
 			w3.signIn("komalnikame93333333@gmail.com", "Kiku@0513234444");
 			se.screenshot("SignIn_InValidCred");
 			se.navigateBack();

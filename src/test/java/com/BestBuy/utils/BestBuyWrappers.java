@@ -4,7 +4,6 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.BestBuy.pages.AddItemsToCartPage;
 import com.BestBuy.pages.BrokenLinkUrl;
-import com.BestBuy.pages.MainPageUSclick;
 import com.BestBuy.pages.BottomLinksValidation;
 import com.BestBuy.pages.MenuTitleValidPage;
 import com.BestBuy.pages.PayementPage;
@@ -14,21 +13,7 @@ import com.BestBuy.utils.SeWrappers;
 public class BestBuyWrappers extends SeWrappers
 {
 	SeWrappers se= new SeWrappers();
-	public void Uspage()
-	{
-		try
-		{		
-
-			MainPageUSclick mPage= PageFactory.initElements(driver, MainPageUSclick.class);
-			mPage.clickUs();
-
-
-		}
-		catch(Exception ex)
-		{
-			ex.printStackTrace();
-		}
-	}
+	
 
 	public void brokenLink()
 	{

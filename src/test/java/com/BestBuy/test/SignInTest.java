@@ -14,14 +14,13 @@ public class SignInTest extends SeWrappers
 
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	MainPageClick mp=new MainPageClick ();	@Test
 
 	public void loginWithValidCredentials()
 	{
 		try
 		{
 			Reports.setTCDesc("Login of BestBuy functionality with valid credentials");
-			mp.mainPageClick();
+			se.launchBrowser();
 			w3.signIn("komalnikame933@gmail.com", "Kiku@051323");
 			Assert.assertFalse(false);
 

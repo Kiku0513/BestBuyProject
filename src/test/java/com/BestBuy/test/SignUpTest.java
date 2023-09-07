@@ -15,14 +15,13 @@ public class SignUpTest extends SeWrappers
 
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	MainPageClick mp=new MainPageClick ();
 	@Test
 	public void signUpWithValidCredentials()
 	{
 		try
 		{
 			Reports.setTCDesc("Validating SignUp of BestBuy functionality with valid credentials");
-			mp.mainPageClick();
+			se.launchBrowser();
 			w3.signUpBestBuy("Komal" ,"Nikame", "komalnikame933@gmail.com","Kiku@051323","Kiku@051323","(555) 555-1234");
 			String act="An account with this email already exists.";
 			Assert.assertFalse(false, act);

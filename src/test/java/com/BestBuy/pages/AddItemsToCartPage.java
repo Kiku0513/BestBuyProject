@@ -7,6 +7,9 @@ import com.BestBuy.utils.SeWrappers;
 
 public class AddItemsToCartPage extends SeWrappers
 {
+	@FindBy(xpath="//div[@class='country-selection']//h4[contains(text(),'United States')]")
+	WebElement unitedState; 
+	
 	@FindBy(xpath="//*[@placeholder='What can we help you find today?']")
 	WebElement searchProduct;
 
@@ -90,7 +93,8 @@ public class AddItemsToCartPage extends SeWrappers
 	SeWrappers se=new SeWrappers();
 
 	public void searchBar(String searchText)
-	{
+	{  
+		click(unitedState);	
 		se.sendkeys(searchProduct,searchText);
 		se.actionClick(clickSearch);
 	}

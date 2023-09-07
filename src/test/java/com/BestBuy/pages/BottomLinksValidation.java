@@ -12,6 +12,9 @@ import com.BestBuy.utils.SeWrappers;
 
 public class BottomLinksValidation extends SeWrappers
 {
+	@FindBy(xpath="//div[@class='country-selection']//h4[contains(text(),'United States')]")
+	WebElement unitedState; 
+	
 	@FindBy(xpath="//a[@class='body-copy-sm mr-200']")
 	List<WebElement> bottomlink;
 
@@ -19,6 +22,8 @@ public class BottomLinksValidation extends SeWrappers
 
 	public void linksValidation()
 	{
+		
+		se.actionClick(unitedState);
 		se.jsscrollDownBottom();
 
 		int count=bottomlink.size();
@@ -42,7 +47,8 @@ public class BottomLinksValidation extends SeWrappers
 			}
 
 		}
-
+         
+	
 
 	}
 }

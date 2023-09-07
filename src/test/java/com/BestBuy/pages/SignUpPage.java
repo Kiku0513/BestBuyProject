@@ -7,6 +7,9 @@ import com.BestBuy.utils.SeWrappers;
 
 public class SignUpPage  extends SeWrappers
 {
+	@FindBy(xpath="//div[@class='country-selection']//h4[contains(text(),'United States')]")
+	WebElement unitedState; 
+	
 
 	@FindBy(xpath="//button[@id='account-menu-account-button']//*[name()='svg']")
 	WebElement acountMenuButton; 
@@ -43,7 +46,8 @@ public class SignUpPage  extends SeWrappers
 	
 	SeWrappers se=new SeWrappers();
 	public void signUp(String fName ,String Lname,String mailId,String pass,String cnfPass,String mobNo)
-	{
+	{	
+		click(unitedState);
 		click(acountMenuButton);
 		click(createAccount);
 		sendkeys(firstName,fName);

@@ -7,6 +7,9 @@ import com.BestBuy.utils.SeWrappers;
 
 public class MenuTitleValidPage  extends SeWrappers
 {
+	@FindBy(xpath="//div[@class='country-selection']//h4[contains(text(),'United States')]")
+	WebElement unitedState; 
+
 	//top deal title
 	@FindBy(xpath="//*[@class='bottom-nav']//*[contains(text(),'Top Deals')][1]")
 	WebElement topdeal;
@@ -20,7 +23,8 @@ public class MenuTitleValidPage  extends SeWrappers
 
 	SeWrappers se=new SeWrappers();
 	public void menuTitleValid() throws InterruptedException
-	{
+	{	
+		se.actionClick(unitedState);
 		se.actionClick(topdeal);
 		se.screenshot("Top Deals");
 

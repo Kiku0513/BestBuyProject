@@ -11,7 +11,6 @@ public class NegativeTc_ItemsAddedToCart
 {
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	MainPageClick mp=new MainPageClick ();
 
 	@Test
 	public void ItemsAddedCartTestWithInvalidCredentials()
@@ -19,7 +18,7 @@ public class NegativeTc_ItemsAddedToCart
 		try
 		{
 			Reports.setTCDesc("Validating ItemsAddedToCart functionality of BestBuy with invalidCred");
-			mp.mainPageClick();
+			se.launchBrowser();
 			w3.searchItems("");
 			se.screenshot("Search_Item_With_EmptyText");
 			Thread.sleep(2000);

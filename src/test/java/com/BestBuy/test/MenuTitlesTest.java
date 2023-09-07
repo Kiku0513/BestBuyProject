@@ -14,7 +14,6 @@ public class MenuTitlesTest extends SeWrappers
 
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	MainPageClick mp=new MainPageClick ();
 	@Test
 
 	public void MenuTitlesValid()
@@ -22,12 +21,12 @@ public class MenuTitlesTest extends SeWrappers
 		try
 		{
 			Reports.setTCDesc(" MenusTitle of BestBuy functionality");
-			mp.mainPageClick();	
+			se.launchBrowser();
 			w3.menuTitle();	
 			String act="Meet the new My Best Buy Memberships™.";
 			String except=driver.findElement(By.xpath("//*[contains(text(),'Meet the new My Best Buy Memberships™.')]")).getText();
 			Assert.assertEquals(act, except);
-			
+
 		}
 		catch(Exception ex)
 		{

@@ -4,7 +4,6 @@
 	<test name="Positive">
 		<parameter name="browser" value="Chrome"></parameter>
 		<classes>
-			<class name="com.BestBuy.test.MainPageClick"></class>
 			<class name="com.BestBuy.test.BrokenLinkTest" />
 			<class name="com.BestBuy.test.SignUpTest" />
 			<class name="com.BestBuy.test.SignInTest" />

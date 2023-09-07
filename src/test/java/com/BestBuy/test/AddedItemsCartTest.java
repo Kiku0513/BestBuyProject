@@ -14,14 +14,13 @@ public class AddedItemsCartTest extends SeWrappers
 
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	MainPageClick mp=new MainPageClick ();
 	@Test
 	public void ItemsAddedCartTest()
 	{
 		try
 		{
 			Reports.setTCDesc("Validating ItemsAddedToCart functionality of BestBuy");
-			mp.mainPageClick();
+			se.launchBrowser();
 			w3.searchItems("TV");
 			w3.ItemsAdded("komalnikame933@gmail.com", "5555551234");
 		}

@@ -7,6 +7,9 @@ import com.BestBuy.utils.SeWrappers;
 
 public class PayementPage extends SeWrappers
 {
+	@FindBy(xpath="//div[@class='country-selection']//h4[contains(text(),'United States')]")
+	WebElement unitedState; 
+
 	@FindBy(xpath="//input[@id='number']")
 	WebElement cardNo;
 	@FindBy(xpath="//input[@id='first-name']")
@@ -24,7 +27,8 @@ public class PayementPage extends SeWrappers
 
 	SeWrappers  se=new SeWrappers();
 	public void payment(String cardNumber,String fname,String lastName,String addrres,String place,String vtext,String postalcode)
-	{
+	{	
+		se.actionClick(unitedState);
 		se.actionSendkeys(cardNo,cardNumber);
 		se.actionSendkeys(name, fname);
 		se.actionSendkeys(lname, lastName);
