@@ -81,7 +81,7 @@ public class SeWrappers extends Reports  //BestBuy
 	}
 
 
-    @AfterMethod
+    @AfterClass
 	public void closeAllBrowsers()
 	{
 		try

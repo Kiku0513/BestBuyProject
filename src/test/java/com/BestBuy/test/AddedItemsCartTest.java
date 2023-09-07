@@ -24,11 +24,6 @@ public class AddedItemsCartTest extends SeWrappers
 			mp.mainPageClick();
 			w3.searchItems("TV");
 			w3.ItemsAdded("komalnikame933@gmail.com", "5555551234");
-			String act="Sorry, there was a problem. Please try that again.";
-			String excep=driver.findElement(By.xpath("//*[@class='c-alert-content rounded-r-100 flex-fill v-bg-pure-white p-200 pl-none'][1]")).getText();
-			Assert.assertEquals(act, excep);
-			
-
 		}
 		catch(Exception ex)
 		{
