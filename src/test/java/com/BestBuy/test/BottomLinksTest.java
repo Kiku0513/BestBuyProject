@@ -18,7 +18,7 @@ public class BottomLinksTest  extends SeWrappers
 	{
 		try
 		{
-			Reports.setTCDesc("Validating bottomLinks of BestBuy functionality ");
+			Reports.setTCDesc("Validating bottomLinks  functionality of BestBuy");
 			se.launchBrowser();
 			w3.bottomLinks();
 

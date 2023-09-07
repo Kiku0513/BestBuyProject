@@ -28,20 +28,18 @@ public class SignInPage extends SeWrappers
 	@FindBy(xpath="//button[normalize-space()='Sign In']")
 	WebElement signInBtn;
 	
-	@FindBy(xpath="//*[@class='c-alert-content rounded-r-100 flex-fill v-bg-pure-white p-200 pl-none']")
-	WebElement error;
 	
 	SeWrappers se=new SeWrappers();
 	public void signInpage(String mail,String pwd ) 
 	{
-		se.actionClick(unitedState);
+		se.click(unitedState);
 		se.actionClick(accountBtn);
 		se.actionClick(signIn);
 		se.actionSendkeys(mailId, mail);
 		se.actionClick(togglebtn);
 		se.actionSendkeys(pass, pwd);
 		se.actionClick(signInBtn);
-		se.screenshotOfWebElement(error, "Error_in_SignIn");
+		
 	}
 	
 	

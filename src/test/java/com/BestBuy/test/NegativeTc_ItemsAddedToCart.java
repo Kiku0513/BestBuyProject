@@ -1,5 +1,6 @@
 package com.BestBuy.test;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
@@ -25,7 +26,7 @@ public class NegativeTc_ItemsAddedToCart
 			w3.searchItems("123");
 			se.screenshot("Search_With_Numbers");
 			Thread.sleep(2000);
-			se.closeBrowser();
+			Assert.assertFalse(false);
 
 
 		}

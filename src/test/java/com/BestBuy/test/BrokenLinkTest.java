@@ -21,7 +21,7 @@ public class BrokenLinkTest extends SeWrappers
 	{
 		try
 		{
-			Reports.setTCDesc("Validating BrokenLinkUrl of BestBuy functionality with valid credentials");
+			Reports.setTCDesc("Validating BrokenLinkUrl of BestBuy functionality ");
 			se.launchBrowser();
 			w3.brokenLink();
 

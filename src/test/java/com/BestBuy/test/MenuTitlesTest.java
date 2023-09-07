@@ -20,7 +20,7 @@ public class MenuTitlesTest extends SeWrappers
 	{
 		try
 		{
-			Reports.setTCDesc(" MenusTitle of BestBuy functionality");
+			Reports.setTCDesc(" MenusTitle functionality of BestBuy ");
 			se.launchBrowser();
 			w3.menuTitle();	
 			String act="Meet the new My Best Buy Memberships™.";

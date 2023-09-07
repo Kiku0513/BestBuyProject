@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,26 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 2 failed,   8 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.BestBuy.test.AddedItemsCartTest" class="method navigator-link" hash-for-method="ItemsAddedCartTest">ItemsAddedCartTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.BestBuy.test.NegativeTc_SignUp" class="method navigator-link" hash-for-method="signUpWithInValidCredentials">signUpWithInValidCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -120,6 +101,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.BestBuy.test.AddedItemsCartTest" class="method navigator-link" hash-for-method="ItemsAddedCartTest">ItemsAddedCartTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.BestBuy.test.NegativeTc_ItemsAddedToCart" class="method navigator-link" hash-for-method="ItemsAddedCartTestWithInvalidCredentials">ItemsAddedCartTestWithInvalidCredentials</a> <!-- method navigator-link -->
@@ -142,17 +128,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.BestBuy.test.SignInTest" class="method navigator-link" hash-for-method="loginWithValidCredentials">loginWithValidCredentials</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.BestBuy.test.MainPageClick" class="method navigator-link" hash-for-method="mainPageClick">mainPageClick</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.BestBuy.test.NegativeTc_SignIn" class="method navigator-link" hash-for-method="signInWithInValidCredentials">signInWithInValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.BestBuy.test.NegativeTc_SignUp" class="method navigator-link" hash-for-method="signUpWithInValidCredentials">signUpWithInValidCredentials</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -172,72 +153,17 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.BestBuy.test.NegativeTc_SignUp</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="signUpWithInValidCredentials">
-                  </a> <!-- signUpWithInValidCredentials -->
-                  <span class="method-name">signUpWithInValidCredentials</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
-	at com.BestBuy.test.NegativeTc_SignUp.signUpWithInValidCredentials(NegativeTc_SignUp.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.BestBuy.test.AddedItemsCartTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="ItemsAddedCartTest">
-                  </a> <!-- ItemsAddedCartTest -->
-                  <span class="method-name">ItemsAddedCartTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [] but found [Sorry, there was a problem. Please try that again.]
-	at com.BestBuy.test.AddedItemsCartTest.ItemsAddedCartTest(AddedItemsCartTest.java:29)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.BestBuy.test.MainPageClick</span>
+              <span class="class-name">com.BestBuy.test.BottomLinksTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="mainPageClick">
-                  </a> <!-- mainPageClick -->
-                  <span class="method-name">mainPageClick</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.BestBuy.test.SignUpTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="signUpWithValidCredentials">
-                  </a> <!-- signUpWithValidCredentials -->
-                  <span class="method-name">signUpWithValidCredentials</span>
+                  <a name="bottomLinksValid">
+                  </a> <!-- bottomLinksValid -->
+                  <span class="method-name">bottomLinksValid</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -275,44 +201,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.BestBuy.test.NegativeTc_ItemsAddedToCart</span>
+              <span class="class-name">com.BestBuy.test.SignUpTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ItemsAddedCartTestWithInvalidCredentials">
-                  </a> <!-- ItemsAddedCartTestWithInvalidCredentials -->
-                  <span class="method-name">ItemsAddedCartTestWithInvalidCredentials</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.BestBuy.test.BottomLinksTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="bottomLinksValid">
-                  </a> <!-- bottomLinksValid -->
-                  <span class="method-name">bottomLinksValid</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.BestBuy.test.SignInTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginWithValidCredentials">
-                  </a> <!-- loginWithValidCredentials -->
-                  <span class="method-name">loginWithValidCredentials</span>
+                  <a name="signUpWithValidCredentials">
+                  </a> <!-- signUpWithValidCredentials -->
+                  <span class="method-name">signUpWithValidCredentials</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -332,6 +228,51 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.BestBuy.test.AddedItemsCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ItemsAddedCartTest">
+                  </a> <!-- ItemsAddedCartTest -->
+                  <span class="method-name">ItemsAddedCartTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.BestBuy.test.NegativeTc_SignUp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpWithInValidCredentials">
+                  </a> <!-- signUpWithInValidCredentials -->
+                  <span class="method-name">signUpWithInValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.BestBuy.test.NegativeTc_ItemsAddedToCart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ItemsAddedCartTestWithInvalidCredentials">
+                  </a> <!-- ItemsAddedCartTestWithInvalidCredentials -->
+                  <span class="method-name">ItemsAddedCartTestWithInvalidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -345,7 +286,6 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Positive&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.BestBuy.test.MainPageClick&quot;/&gt;
       &lt;class name=&quot;com.BestBuy.test.BrokenLinkTest&quot;/&gt;
       &lt;class name=&quot;com.BestBuy.test.SignUpTest&quot;/&gt;
       &lt;class name=&quot;com.BestBuy.test.SignInTest&quot;/&gt;
@@ -373,7 +313,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Positive (7 classes)</span>
+                <span class="test-name">Positive (6 classes)</span>
               </li>
               <li>
                 <span class="test-name">Negative (3 classes)</span>
@@ -402,52 +342,44 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ItemsAddedCartTest')
-data.setCell(0, 2, 'com.BestBuy.test.AddedItemsCartTest')
-data.setCell(0, 3, 117958);
+data.setCell(0, 1, 'signUpWithInValidCredentials')
+data.setCell(0, 2, 'com.BestBuy.test.NegativeTc_SignUp')
+data.setCell(0, 3, 138274);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'bottomLinksValid')
-data.setCell(1, 2, 'com.BestBuy.test.BottomLinksTest')
-data.setCell(1, 3, 110488);
+data.setCell(1, 1, 'ItemsAddedCartTest')
+data.setCell(1, 2, 'com.BestBuy.test.AddedItemsCartTest')
+data.setCell(1, 3, 120729);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'signUpWithInValidCredentials')
-data.setCell(2, 2, 'com.BestBuy.test.NegativeTc_SignUp')
-data.setCell(2, 3, 78196);
+data.setCell(2, 1, 'bottomLinksValid')
+data.setCell(2, 2, 'com.BestBuy.test.BottomLinksTest')
+data.setCell(2, 3, 117229);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'signInWithInValidCredentials')
-data.setCell(3, 2, 'com.BestBuy.test.NegativeTc_SignIn')
-data.setCell(3, 3, 59856);
+data.setCell(3, 1, 'ItemsAddedCartTestWithInvalidCredentials')
+data.setCell(3, 2, 'com.BestBuy.test.NegativeTc_ItemsAddedToCart')
+data.setCell(3, 3, 102726);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'MenuTitlesValid')
-data.setCell(4, 2, 'com.BestBuy.test.MenuTitlesTest')
-data.setCell(4, 3, 50833);
+data.setCell(4, 1, 'signInWithInValidCredentials')
+data.setCell(4, 2, 'com.BestBuy.test.NegativeTc_SignIn')
+data.setCell(4, 3, 75852);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'ItemsAddedCartTestWithInvalidCredentials')
-data.setCell(5, 2, 'com.BestBuy.test.NegativeTc_ItemsAddedToCart')
-data.setCell(5, 3, 37206);
+data.setCell(5, 1, 'MenuTitlesValid')
+data.setCell(5, 2, 'com.BestBuy.test.MenuTitlesTest')
+data.setCell(5, 3, 56559);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'signUpWithValidCredentials')
 data.setCell(6, 2, 'com.BestBuy.test.SignUpTest')
-data.setCell(6, 3, 32075);
+data.setCell(6, 3, 30830);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'loginWithValidCredentials')
-data.setCell(7, 2, 'com.BestBuy.test.SignInTest')
-data.setCell(7, 3, 28186);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'mainPageClick')
-data.setCell(8, 2, 'com.BestBuy.test.MainPageClick')
-data.setCell(8, 3, 22789);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'brokenLink')
-data.setCell(9, 2, 'com.BestBuy.test.BrokenLinkTest')
-data.setCell(9, 3, 12975);
+data.setCell(7, 1, 'brokenLink')
+data.setCell(7, 2, 'com.BestBuy.test.BrokenLinkTest')
+data.setCell(7, 3, 17810);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 minutes</span>
+              <span class="suite-total-time">Total running time: 11 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -462,24 +394,15 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">12 ignored methods</span>
+            <span class="header-content">10 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.BestBuy.test.AddedItemsCartTest</span>
+              <span class="ignored-class-name">com.BestBuy.test.BottomLinksTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">startReport</span>
                 <br/>
                 <span class="ignored-method-name">endReport</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.BestBuy.test.SignUpTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endReport</span>
-                <br/>
-                <span class="ignored-method-name">startReport</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -493,16 +416,7 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.BestBuy.test.BottomLinksTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">endReport</span>
-                <br/>
-                <span class="ignored-method-name">startReport</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.BestBuy.test.BrokenLinkTest</span>
+              <span class="ignored-class-name">com.BestBuy.test.SignUpTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">startReport</span>
                 <br/>
@@ -512,6 +426,15 @@ return data;
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.BestBuy.test.SignInTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">endReport</span>
+                <br/>
+                <span class="ignored-method-name">startReport</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.BestBuy.test.AddedItemsCartTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">startReport</span>
                 <br/>
@@ -527,180 +450,142 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.BestBuy.test.MainPageClick</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.BestBuy.test.BrokenLinkTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">699 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">mainPageClick</span>
-                <span class="method-start">721 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">23516 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">closeAllBrowsers</span>
-                <span class="method-start">24343 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.BestBuy.test.BrokenLinkTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">24654 ms</span>
+                <span class="method-start">531 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">brokenLink</span>
-                <span class="method-start">24655 ms</span>
+                <span class="method-start">549 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">closeAllBrowsers</span>
-                <span class="method-start">37634 ms</span>
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">18365 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">closeAllBrowsers</span>
+                <span class="method-start">18658 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.BestBuy.test.SignUpTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">38147 ms</span>
+                <span class="method-start">18792 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">signUpWithValidCredentials</span>
-                <span class="method-start">38148 ms</span>
+                <span class="method-start">18793 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">70225 ms</span>
+                <span class="method-start">49626 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
+              <div class="configuration-class after">
                 <span class="method-name">closeAllBrowsers</span>
-                <span class="method-start">70542 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.BestBuy.test.SignInTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">70917 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">loginWithValidCredentials</span>
-                <span class="method-start">70918 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeBrowser</span>
-                <span class="method-start">99108 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">closeAllBrowsers</span>
-                <span class="method-start">99486 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-start">49824 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.BestBuy.test.MenuTitlesTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">99811 ms</span>
+                <span class="method-start">50072 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">MenuTitlesValid</span>
-                <span class="method-start">99813 ms</span>
+                <span class="method-start">50073 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">150648 ms</span>
+                <span class="method-start">106635 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
+              <div class="configuration-class after">
                 <span class="method-name">closeAllBrowsers</span>
-                <span class="method-start">151111 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-start">107031 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.BestBuy.test.BottomLinksTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">151544 ms</span>
+                <span class="method-start">107350 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">bottomLinksValid</span>
-                <span class="method-start">151546 ms</span>
+                <span class="method-start">107351 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">262036 ms</span>
+                <span class="method-start">224583 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
+              <div class="configuration-class after">
                 <span class="method-name">closeAllBrowsers</span>
-                <span class="method-start">262555 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-start">224831 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.BestBuy.test.AddedItemsCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(Chrome)</span>
-                <span class="method-start">262858 ms</span>
+                <span class="method-start">225150 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">ItemsAddedCartTest</span>
-                <span class="method-start">262862 ms</span>
+                <span class="method-start">225152 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">380823 ms</span>
+                <span class="method-start">345884 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
+              <div class="configuration-class after">
                 <span class="method-name">closeAllBrowsers</span>
-                <span class="method-start">381272 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-start">346499 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.BestBuy.test.NegativeTc_SignIn</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">signInWithInValidCredentials</span>
-                <span class="method-start">382124 ms</span>
+                <span class="method-start">346994 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">441981 ms</span>
+                <span class="method-start">422848 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.BestBuy.test.NegativeTc_ItemsAddedToCart</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">ItemsAddedCartTestWithInvalidCredentials</span>
-                <span class="method-start">442681 ms</span>
+                <span class="method-start">423411 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">479889 ms</span>
+                <span class="method-start">526140 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.BestBuy.test.NegativeTc_SignUp</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">signUpWithInValidCredentials</span>
-                <span class="method-start">480276 ms</span>
+                <span class="method-start">526450 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">558474 ms</span>
+                <span class="method-start">664725 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.BestBuy.test.MainPageClick</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.BestBuy.test.BrokenLinkTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">558490 ms</span>
+                <span class="method-start">664740 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
