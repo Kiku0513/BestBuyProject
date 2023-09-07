@@ -112,9 +112,9 @@ public class AddItemsToCartPage extends SeWrappers
 		se.actionClick(addProduct3);
 		Thread.sleep(2000);
 		se.actionClick(goToCart);
-		se.screenshot("AddedItemsToCart");
 		se.actionClick(cancelbtn3);
 		Thread.sleep(2000);
+		se.screenshot("AddedItemsToCart");
 		se.actionClick(checkout);
 		se.click(conGuest);
 		se.actionSendkeys(email, mail);

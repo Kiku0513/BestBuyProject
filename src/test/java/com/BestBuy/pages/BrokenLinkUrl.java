@@ -10,11 +10,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
 
-public class BestBuyLinkValidation extends SeWrappers
+public class BrokenLinkUrl extends SeWrappers
 {
-	@FindBy(xpath="//div[@class='country-selection']//h4[contains(text(),'United States')]")
-	WebElement unitedState; 
-
+	
 	public void brokenLinvkValid()
 	{	
 		String urlToCheck = "https://www.bestbuy.com/";
@@ -39,6 +37,6 @@ public class BestBuyLinkValidation extends SeWrappers
 			System.out.println("An exception occurred, indicating a broken link.");
 		}
 
-		click(unitedState);
+
 	}
-}
+	}

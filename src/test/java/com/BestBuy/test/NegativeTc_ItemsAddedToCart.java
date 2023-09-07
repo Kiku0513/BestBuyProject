@@ -11,7 +11,7 @@ public class NegativeTc_ItemsAddedToCart
 {
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	BrokenLinkTest us=new BrokenLinkTest();
+	MainPageClick mp=new MainPageClick ();
 
 	@Test
 	public void ItemsAddedCartTestWithInvalidCredentials()
@@ -19,7 +19,7 @@ public class NegativeTc_ItemsAddedToCart
 		try
 		{
 			Reports.setTCDesc("Validating ItemsAddedToCart functionality of BestBuy with invalidCred");
-			us.uSPageTest();
+			mp.mainPageClick();
 			w3.searchItems("");
 			se.screenshot("Search_Item_With_EmptyText");
 			Thread.sleep(2000);
@@ -35,8 +35,8 @@ public class NegativeTc_ItemsAddedToCart
 		catch(Exception ex)
 		{
 			ex.printStackTrace();
-			System.out.println("Fail to Validate ItemsAddedToCart functionality ");
-			Reports.reportStep("FAIL", "Problem while  ItemsAddedToCart functionality  Validation");
+			System.out.println("Fail to Validate ItemsAddedToCart functionality with Invalid Cred");
+			Reports.reportStep("FAIL", "Problem while  ItemsAddedToCart functionality  with Invalid Cred");
 		}
 	}
 	@AfterMethod

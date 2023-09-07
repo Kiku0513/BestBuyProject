@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Positive(failed)">
+  <test thread-count="5" name="Negative(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.BestBuy.test.AddedItemsCartTest">
+      <class name="com.BestBuy.test.NegativeTc_SignUp">
         <methods>
-          <include name="startReport"/>
-          <include name="endReport"/>
+          <include name="signUpWithInValidCredentials"/>
           <include name="closeBrowser"/>
-          <include name="launchBrowser"/>
-          <include name="ItemsAddedCartTest"/>
         </methods>
-      </class> <!-- com.BestBuy.test.AddedItemsCartTest -->
+      </class> <!-- com.BestBuy.test.NegativeTc_SignUp -->
     </classes>
-  </test> <!-- Positive(failed) -->
+  </test> <!-- Negative(failed) -->
 </suite> <!-- Failed suite [Suite] -->

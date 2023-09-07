@@ -12,8 +12,7 @@ public class NegativeTc_SignUp
 {    
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	BrokenLinkTest us=new BrokenLinkTest();
-
+	MainPageClick mp=new MainPageClick ();
 
 	@Test
 
@@ -21,8 +20,8 @@ public class NegativeTc_SignUp
 	{
 		try
 		{
-			Reports.setTCDesc("Validating SignUp of BestBuy functionality with Invalid credentials");
-			us.uSPageTest();
+			Reports.setTCDesc("SignUp of BestBuy functionality with Invalid credentials");
+			mp.mainPageClick();
 			w3.signUpBestBuy("" ,"Nikame", "komalnikame93333@gmail.com","Kiku@05144323","Kiku@0251323","(555) 555-1234");
 			se.screenshot("InValidCredSignUp1");
 			se.navigateBack();
@@ -34,8 +33,8 @@ public class NegativeTc_SignUp
 		catch(Exception ex)
 		{
 			ex.printStackTrace();
-			System.out.println("Fail to SignUp");
-			Reports.reportStep("FAIL", "Problem while SignUp");
+			System.out.println("Fail to SignUp with InValid Cred");
+			Reports.reportStep("FAIL", "Problem while SignUp with Invalid Cred");
 
 
 		}

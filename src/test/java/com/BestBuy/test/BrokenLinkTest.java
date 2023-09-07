@@ -17,7 +17,7 @@ public class BrokenLinkTest extends SeWrappers
 
 	@Test
 
-	public void uSPageTest()
+	public void brokenLink()
 	{
 		try
 		{

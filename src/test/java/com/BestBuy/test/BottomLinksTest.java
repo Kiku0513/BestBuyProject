@@ -12,7 +12,7 @@ public class BottomLinksTest  extends SeWrappers
 {
 	BestBuyWrappers w3=new BestBuyWrappers ();
 	SeWrappers se=new  SeWrappers();
-	BrokenLinkTest us=new BrokenLinkTest();
+	MainPageClick mp=new MainPageClick ();
 	
 	@Test
 	public void bottomLinksValid()
@@ -20,7 +20,7 @@ public class BottomLinksTest  extends SeWrappers
 		try
 		{
 			Reports.setTCDesc("Validating bottomLinks of BestBuy functionality ");
-			us.uSPageTest();			
+			mp.mainPageClick();			
 			w3.bottomLinks();
 
 		}

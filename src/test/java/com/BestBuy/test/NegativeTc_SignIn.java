@@ -11,20 +11,19 @@ public class NegativeTc_SignIn
 {	
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	BrokenLinkTest us=new BrokenLinkTest();
-
+	MainPageClick mp=new MainPageClick ();
 
 	@Test
 	public void signInWithInValidCredentials()
 	{
 		try
 		{
-			Reports.setTCDesc("Validating SignIn of BestBuy functionality with Invalid credentials");
-			us.uSPageTest();
+			Reports.setTCDesc(" SignIn of BestBuy functionality with Invalid credentials");
+			mp.mainPageClick();
 			w3.signIn("komalnikame93333333@gmail.com", "Kiku@0513234444");
 			se.screenshot("SignIn_InValidCred");
 			se.navigateBack();
-			w3.signIn("", "");
+			w3.signIn("", "9876976555");
 			se.screenshot("SignInWithEmptyText");
 
 		}
@@ -32,7 +31,7 @@ public class NegativeTc_SignIn
 		{
 			ex.printStackTrace();
 			System.out.println("Fail to SignIn with InValid Credentials");
-			Reports.reportStep("FAIL", "Problem while SignIn with In valid Credentials");
+			Reports.reportStep("FAIL", "Problem while SignIn with Invalid Credentials");
 
 
 		}

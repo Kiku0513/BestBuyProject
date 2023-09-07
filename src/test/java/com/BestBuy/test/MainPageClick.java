@@ -1,7 +1,5 @@
 package com.BestBuy.test;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
@@ -9,31 +7,29 @@ import com.BestBuy.utils.BestBuyWrappers;
 import com.BestBuy.utils.Reports;
 import com.BestBuy.utils.SeWrappers;
 
-public class SignInTest extends SeWrappers
+public class MainPageClick extends SeWrappers
 {
 
-	BestBuyWrappers w3=new BestBuyWrappers();
-	SeWrappers se= new SeWrappers();
-	MainPageClick mp=new MainPageClick ();	@Test
 
-	public void loginWithValidCredentials()
+	BestBuyWrappers w3=new BestBuyWrappers ();
+	SeWrappers se=new  SeWrappers();
+	
+	
+	@Test
+	public void mainPageClick()
 	{
 		try
 		{
-			Reports.setTCDesc("Login of BestBuy functionality with valid credentials");
-			mp.mainPageClick();
-			w3.signIn("komalnikame933@gmail.com", "Kiku@051323");
-			Assert.assertFalse(false);
-
-
+			Reports.setTCDesc("Validating usClick of BestBuy functionality ");
+			se.launchBrowser();
+			w3.Uspage();
 
 		}
 		catch(Exception ex)
 		{
 			ex.printStackTrace();
-			System.out.println("Fail to Login");
-			Reports.reportStep("FAIL", "Problem while Login");
-
+			System.out.println("Fail to Validating bottomLinks");
+			Reports.reportStep("FAIL", "Problem while Validating usClick");
 
 		}
 	}
@@ -54,5 +50,8 @@ public class SignInTest extends SeWrappers
 	}
 
 }
+
+
+
 
 

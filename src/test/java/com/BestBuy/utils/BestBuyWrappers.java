@@ -3,7 +3,8 @@ package com.BestBuy.utils;
 import org.openqa.selenium.support.PageFactory;
 
 import com.BestBuy.pages.AddItemsToCartPage;
-import com.BestBuy.pages.BestBuyLinkValidation;
+import com.BestBuy.pages.BrokenLinkUrl;
+import com.BestBuy.pages.MainPageUSclick;
 import com.BestBuy.pages.BottomLinksValidation;
 import com.BestBuy.pages.MenuTitleValidPage;
 import com.BestBuy.pages.PayementPage;
@@ -13,11 +14,26 @@ import com.BestBuy.utils.SeWrappers;
 public class BestBuyWrappers extends SeWrappers
 {
 	SeWrappers se= new SeWrappers();
+	public void Uspage()
+	{
+		try
+		{		
+
+			MainPageUSclick mPage= PageFactory.initElements(driver, MainPageUSclick.class);
+			mPage.clickUs();
+
+
+		}
+		catch(Exception ex)
+		{
+			ex.printStackTrace();
+		}
+	}
 
 	public void brokenLink()
 	{
-		BestBuyLinkValidation usPage= PageFactory.initElements(driver, BestBuyLinkValidation.class);
-		usPage.brokenLinvkValid();
+		BrokenLinkUrl brlink= PageFactory.initElements(driver, BrokenLinkUrl.class);
+		brlink.brokenLinvkValid();
 
 	}
 
@@ -57,7 +73,7 @@ public class BestBuyWrappers extends SeWrappers
 	{
 		try
 		{		
-			BestBuyLinkValidation usPage= PageFactory.initElements(driver, BestBuyLinkValidation.class);
+			BrokenLinkUrl usPage= PageFactory.initElements(driver, BrokenLinkUrl.class);
 
 			MenuTitleValidPage mPage= PageFactory.initElements(driver, MenuTitleValidPage.class);
 			usPage.brokenLinvkValid();
