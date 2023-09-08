@@ -8,7 +8,7 @@ import com.BestBuy.utils.BestBuyWrappers;
 import com.BestBuy.utils.Reports;
 import com.BestBuy.utils.SeWrappers;
 
-public class NegativeTc_ItemsAddedToCart
+public class NegativeTc_ItemsAddedToCart extends SeWrappers
 {
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
@@ -22,13 +22,10 @@ public class NegativeTc_ItemsAddedToCart
 			se.launchBrowser();
 			w3.searchItems("");
 			se.screenshot("Search_Item_With_EmptyText");
-			Thread.sleep(2000);
+			se.navigateRefresh();
 			w3.searchItems("123");
 			se.screenshot("Search_With_Numbers");
-			Thread.sleep(2000);
 			Assert.assertFalse(false);
-
-
 		}
 
 

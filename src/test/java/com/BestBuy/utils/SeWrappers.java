@@ -45,7 +45,6 @@ public class SeWrappers extends Reports  //BestBuy
 	@Parameters("browser")
 	public void setUp(String browser)
 	{
-
 		this.browsername = browser;
 	}
 	public void launchBrowser()

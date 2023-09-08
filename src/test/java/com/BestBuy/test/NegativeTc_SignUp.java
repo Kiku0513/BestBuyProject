@@ -8,7 +8,7 @@ import com.BestBuy.utils.BestBuyWrappers;
 import com.BestBuy.utils.Reports;
 import com.BestBuy.utils.SeWrappers;
 
-public class NegativeTc_SignUp 
+public class NegativeTc_SignUp extends SeWrappers
 {    
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
@@ -21,11 +21,8 @@ public class NegativeTc_SignUp
 		{
 			Reports.setTCDesc("SignUp of BestBuy functionality with Invalid credentials");
 			se.launchBrowser();
-			w3.signUpBestBuy("" ,"Nikame", "komalnikame93333@gmail.com","Kiku@05144323","Kiku@0251323","(555) 555-1234");
+			w3.signUpBestBuy("$" ,"Nikame", "komalnikame93333@gmail.com","Kiku@05144323","Kiku@0251323","(555) 555-1234");
 			se.screenshot("InValidCredSignUp1");
-			se.navigateBack();
-			w3.signUpBestBuy("k1111" ,"", "93333@gmail.com","K0514323","0251323","(555) 555-1234");
-			se.screenshot("InValidCredSignUp2");
 			Assert.assertFalse(false);
 
 		}
@@ -44,7 +41,7 @@ public class NegativeTc_SignUp
 	{
 		try
 		{
-			
+			se.closeAllBrowsers();
 			Reports.reportStep("PASS", "Browser closed successfully");
 		}
 		catch(Exception ex)

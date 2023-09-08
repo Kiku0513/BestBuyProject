@@ -6,11 +6,10 @@
 		<classes>
 			<class name="com.BestBuy.test.BrokenLinkTest" />
 			<class name="com.BestBuy.test.SignUpTest" />
-			<class name="com.BestBuy.test.SignInTest" />
 			<class name="com.BestBuy.test.MenuTitlesTest" />
+			<class name="com.BestBuy.test.SignInTest" />
 			<class name="com.BestBuy.test.BottomLinksTest" />
 			<class name="com.BestBuy.test.AddedItemsCartTest" />
-			<class name="com.BestBuy.utils.Reports"></class>
 			<!--<class name="com.BestBuy.test.PaymentPageTest" />-->
 		</classes>
 	</test>

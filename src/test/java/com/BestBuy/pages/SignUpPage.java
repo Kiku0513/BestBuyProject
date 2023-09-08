@@ -41,9 +41,6 @@ public class SignUpPage  extends SeWrappers
 	@FindBy(xpath="//button[contains(text(),'Create an Account')]")
 	WebElement createAccountButton;
 	
-	@FindBy(xpath="//*[@class='c-alert-content rounded-r-100 flex-fill v-bg-pure-white p-200 pl-none']")
-	WebElement sec;
-	
 	SeWrappers se=new SeWrappers();
 	public void signUp(String fName ,String Lname,String mailId,String pass,String cnfPass,String mobNo)
 	{	
@@ -58,7 +55,6 @@ public class SignUpPage  extends SeWrappers
 		sendkeys(cnfrmPass,cnfPass);
 		sendkeys(phoneNo,mobNo);
 		click(createAccountButton);
-		se.screenshotOfWebElement(sec, "SignUpScreenshot");
 		
 	}
 }

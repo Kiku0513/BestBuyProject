@@ -22,10 +22,6 @@ public class SignInTest extends SeWrappers
 			Reports.setTCDesc("Login of BestBuy functionality with valid credentials");
 			se.launchBrowser();
 			w3.signIn("komalnikame933@gmail.com", "Kiku@051323");
-			Assert.assertFalse(false);
-
-
-
 		}
 		catch(Exception ex)
 		{

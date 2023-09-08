@@ -33,10 +33,10 @@ public class SignInPage extends SeWrappers
 	public void signInpage(String mail,String pwd ) 
 	{
 		se.click(unitedState);
-		se.actionClick(accountBtn);
-		se.actionClick(signIn);
+		se.click(accountBtn);
+		se.click(signIn);
 		se.actionSendkeys(mailId, mail);
-		se.actionClick(togglebtn);
+		se.click(togglebtn);
 		se.actionSendkeys(pass, pwd);
 		se.actionClick(signInBtn);
 		

@@ -92,8 +92,9 @@ public class AddItemsToCartPage extends SeWrappers
 
 	SeWrappers se=new SeWrappers();
 
-	public void searchBar(String searchText)
+	public void searchBar(String searchText) throws InterruptedException
 	{  
+		Thread.sleep(1000);
 		click(unitedState);	
 		se.sendkeys(searchProduct,searchText);
 		se.actionClick(clickSearch);
@@ -106,7 +107,6 @@ public class AddItemsToCartPage extends SeWrappers
 		se.actionClick(appliance);
 		se.actionClick(smallKitchenApp);
 		se.actionClick(airFryer);
-		se.jsVerticalScroll(250);
 		se.actionClick(addProduct2);
 		se.actionClick(cancelbtn2);
 		se.actionClick(menuClick);
