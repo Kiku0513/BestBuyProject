@@ -13,19 +13,16 @@ public class NegativeTc_ItemsAddedToCart extends SeWrappers
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
 
-	@Test
+	@Test(timeOut=4000)
 	public void ItemsAddedCartTestWithInvalidCredentials()
 	{
 		try
 		{
 			Reports.setTCDesc("Validating ItemsAddedToCart functionality of BestBuy with invalidCred");
 			se.launchBrowser();
-			w3.searchItems("");
-			se.screenshot("Search_Item_With_EmptyText");
-			se.navigateRefresh();
 			w3.searchItems("123");
 			se.screenshot("Search_With_Numbers");
-			Assert.assertFalse(false);
+			Assert.assertTrue(false);
 		}
 
 

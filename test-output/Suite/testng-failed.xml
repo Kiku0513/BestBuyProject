@@ -4,27 +4,15 @@
   <test thread-count="5" name="Positive(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="com.BestBuy.test.AddedItemsCartTest">
+      <class name="com.BestBuy.test.SignInTest">
         <methods>
-          <include name="closeAllBrowsers"/>
           <include name="startReport"/>
           <include name="endReport"/>
           <include name="closeBrowser"/>
           <include name="setUp"/>
-          <include name="ItemsAddedCartTest"/>
+          <include name="signIn"/>
         </methods>
-      </class> <!-- com.BestBuy.test.AddedItemsCartTest -->
+      </class> <!-- com.BestBuy.test.SignInTest -->
     </classes>
   </test> <!-- Positive(failed) -->
-  <test thread-count="5" name="Negative(failed)">
-    <parameter name="browser" value="Chrome"/>
-    <classes>
-      <class name="com.BestBuy.test.NegativeTc_SignUp">
-        <methods>
-          <include name="signUpWithInValidCredentials"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- com.BestBuy.test.NegativeTc_SignUp -->
-    </classes>
-  </test> <!-- Negative(failed) -->
 </suite> <!-- Failed suite [Suite] -->

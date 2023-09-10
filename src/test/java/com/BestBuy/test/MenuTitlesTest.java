@@ -14,7 +14,7 @@ public class MenuTitlesTest extends SeWrappers
 
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	@Test
+	@Test(priority=4)
 
 	public void MenuTitlesValid()
 	{

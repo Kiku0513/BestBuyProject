@@ -2,6 +2,7 @@ package com.BestBuy.test;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
@@ -11,10 +12,10 @@ import com.BestBuy.utils.SeWrappers;
 
 public class AddedItemsCartTest extends SeWrappers
 {
-
+	//tc 6,7,8
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	@Test
+	@Test(priority=6)
 	public void ItemsAddedCartTest()
 	{
 		try
@@ -22,7 +23,8 @@ public class AddedItemsCartTest extends SeWrappers
 			Reports.setTCDesc("Validating ItemsAddedToCart functionality of BestBuy");
 			se.launchBrowser();
 			w3.searchItems("TV");
-			w3.ItemsAdded("komalnikame933@gmail.com", "5555551234");
+			w3.ItemsAdded(" 96701","komalnikame933@gmail.com", "5555551234");
+			//Assert.assertFalse(false,"Sorry, there was a problem. Please try that again.");
 		}
 		catch(Exception ex)
 		{
@@ -33,10 +35,10 @@ public class AddedItemsCartTest extends SeWrappers
 
 		}
 	}
-	
-	
 
-	@AfterMethod
+
+
+	@AfterClass
 	public void closeBrowser()
 	{
 		try

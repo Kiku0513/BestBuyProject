@@ -98,13 +98,12 @@ public class BestBuyWrappers extends SeWrappers
 			ex.printStackTrace();
 		}
 	}
-	public void ItemsAdded(String mail,String mobNo)
+	public void ItemsAdded(String codeh,String mail,String mobNo)
 	{
 		try
 		{		
-			Thread.sleep(2000);
 			AddItemsToCartPage itemsaddPage= PageFactory.initElements(driver, AddItemsToCartPage.class);
-			itemsaddPage.addItemsToCart( mail, mobNo);
+			itemsaddPage.addItemsToCart(codeh, mail, mobNo);
 
 		}
 		catch(Exception ex)
@@ -127,12 +126,12 @@ public class BestBuyWrappers extends SeWrappers
 			ex.printStackTrace();
 		}
 	}
-	public void paymentcard(String cardNumber,String fname,String lastName,String addrres,String place,String vtext,String postalcode)
+	public void paymentcard(String cardNumber,String fname,String lastName,String addrres,String place,String vtext,String postalcode,String pass)
 	{
 		try
 		{		
 			PayementPage payPage= PageFactory.initElements(driver, PayementPage.class);
-			payPage.payment(cardNumber,fname,lastName,addrres,place,vtext,postalcode);
+			payPage.payment(cardNumber,fname,lastName,addrres,place,vtext,postalcode,pass);
 			se.screenshot("Payment");
 
 

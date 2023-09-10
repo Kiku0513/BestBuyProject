@@ -9,7 +9,7 @@ public class AddItemsToCartPage extends SeWrappers
 {
 	@FindBy(xpath="//div[@class='country-selection']//h4[contains(text(),'United States')]")
 	WebElement unitedState; 
-	
+
 	@FindBy(xpath="//*[@placeholder='What can we help you find today?']")
 	WebElement searchProduct;
 
@@ -61,13 +61,18 @@ public class AddItemsToCartPage extends SeWrappers
 	WebElement addProduct3;
 
 	//9thTc
-	@FindBy(xpath="//*[@class='top-nav-container-v2']//*[@class='c-button c-button-secondary c-button-sm c-button-block ']")
+	@FindBy(xpath="//a[text()='Go to Cart']")
 	WebElement goToCart;
-
-	@FindBy(xpath="//*[@class='c-close-icon c-modal-close-icon']")
-	WebElement cancelbtn3;
-
-	@FindBy(xpath="//*[@class='fluid-large-view__sidebar']//*[@class='btn btn-lg btn-block btn-primary']")
+	
+	@FindBy(xpath="//button[@class='c-close-icon c-modal-close-icon']")
+	WebElement closeAd;
+	@FindBy(xpath="(//span[@class='availability__link'])[1]")
+	WebElement pinClick;
+	@FindBy(xpath="//input[@id='location']")
+	WebElement codehere;
+	@FindBy(xpath="//button[text()='Update']")
+	WebElement updateClick;
+	@FindBy(xpath="//button[text()='Checkout']")
 	WebElement checkout;
 
 	@FindBy(xpath="//button[contains(text(),'Continue as Guest')]")
@@ -81,15 +86,12 @@ public class AddItemsToCartPage extends SeWrappers
 	@FindBy(id="user.phone")
 	WebElement phone;
 
-	@FindBy(id="text-updates")
-	WebElement textBox;
+	@FindBy(xpath="//*[@data-track='Text Notifications']")
+	WebElement checkBox;
 
-	@FindBy(xpath="//*[@class='btn btn-lg btn-block btn-secondary']")
+	@FindBy(xpath="//*[contains(text(),'Continue to Payment Information')]")
 	WebElement cntnBtn;
-
-	@FindBy(xpath="//*[@class='error-spacing']")
-	WebElement errormsg;
-
+	
 	SeWrappers se=new SeWrappers();
 
 	public void searchBar(String searchText) throws InterruptedException
@@ -99,7 +101,7 @@ public class AddItemsToCartPage extends SeWrappers
 		se.sendkeys(searchProduct,searchText);
 		se.actionClick(clickSearch);
 	}
-	public void addItemsToCart(String mail,String mobNo) throws InterruptedException
+	public void addItemsToCart(String codeh,String mail,String mobNo) throws InterruptedException
 	{
 		se.actionClick(addProduct1);
 		se.actionClick(cancelbtn1);
@@ -114,24 +116,24 @@ public class AddItemsToCartPage extends SeWrappers
 		se.actionClick(sony);
 		se.actionClick(sonyAudio);
 		se.actionClick(addProduct3);
+		se.click(goToCart);
+		se.click(closeAd);	
+		se.click(pinClick);
+		se.actionSendkeys(codehere,codeh);
+		jsClick(updateClick);
+		Thread.sleep(7000);
 		Thread.sleep(2000);
-		se.actionClick(goToCart);
-		se.actionClick(cancelbtn3);
-		Thread.sleep(2000);
-		se.screenshot("AddedItemsToCart");
 		se.actionClick(checkout);
 		se.click(conGuest);
 		se.actionSendkeys(email, mail);
 		se.actionSendkeys(phone, mobNo);
-		se.actionClick(textBox);
-		se.verifySelected(textBox);
+		se.actionClick(checkBox);
+		se.verifySelected(checkBox);
+		Thread.sleep(3000);
+		se.waitForMeExplicit(cntnBtn,10);
 		se.actionClick(cntnBtn);
-		
+		Thread.sleep(1000);
+
 	}
-
-
-
-
-
 
 }

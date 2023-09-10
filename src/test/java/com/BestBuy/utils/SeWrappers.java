@@ -1,5 +1,5 @@
 package com.BestBuy.utils;
-
+import java.io.FileInputStream;
 import java.io.File;
 import java.time.Duration;
 import java.util.List;
@@ -8,6 +8,9 @@ import java.util.Set;
 import javax.imageio.ImageIO;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -28,6 +31,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
 import com.BestBuy.utils.Reports;
@@ -80,7 +84,7 @@ public class SeWrappers extends Reports  //BestBuy
 	}
 
 
-    @AfterClass
+  //  @AfterClass
 	public void closeAllBrowsers()
 	{
 		try
@@ -785,6 +789,18 @@ public class SeWrappers extends Reports  //BestBuy
 	}
 
 
+	public boolean isAlertPresent() 
+	{ 		    
+		driver.switchTo().alert();
+		
+		if (isAlertPresent()) 
+		{ 			    
+			driver.switchTo().alert(); 			
+			driver.switchTo().alert().dismiss(); 			  
+			driver.switchTo().defaultContent(); 		
+		}
+			return false; 
+	}
 	
-
+	
 }

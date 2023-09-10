@@ -13,7 +13,7 @@ public class BottomLinksTest  extends SeWrappers
 	BestBuyWrappers w3=new BestBuyWrappers ();
 	SeWrappers se=new  SeWrappers();
 	
-	@Test
+	@Test(priority=5)
 	public void bottomLinksValid()
 	{
 		try

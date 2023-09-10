@@ -7,9 +7,6 @@ import com.BestBuy.utils.SeWrappers;
 
 public class PayementPage extends SeWrappers
 {
-	@FindBy(xpath="//div[@class='country-selection']//h4[contains(text(),'United States')]")
-	WebElement unitedState; 
-
 	@FindBy(xpath="//input[@id='number']")
 	WebElement cardNo;
 	@FindBy(xpath="//input[@id='first-name']")
@@ -24,11 +21,14 @@ public class PayementPage extends SeWrappers
 	WebElement selState;
 	@FindBy(xpath="//input[@id='postalCode']")
 	WebElement zipCode;
-
+	@FindBy(xpath="	//*[@type='password']")
+	WebElement pass;
+	@FindBy(xpath="//*[@data-track='MyBBY Create Account Attempt']")
+	WebElement createAcc;
+	
 	SeWrappers  se=new SeWrappers();
-	public void payment(String cardNumber,String fname,String lastName,String addrres,String place,String vtext,String postalcode)
+	public void payment(String cardNumber,String fname,String lastName,String addrres,String place,String vtext,String postalcode,String password)
 	{	
-		se.actionClick(unitedState);
 		se.actionSendkeys(cardNo,cardNumber);
 		se.actionSendkeys(name, fname);
 		se.actionSendkeys(lname, lastName);
@@ -36,6 +36,8 @@ public class PayementPage extends SeWrappers
 		se.sendkeys(city, place);
 		se.selectByVisibleText(selState, vtext);
 		se.sendkeys(zipCode, postalcode);
+		se.sendkeys(pass, password);
+		se.actionClick(createAcc);
 	}
 
 

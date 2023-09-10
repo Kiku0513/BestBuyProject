@@ -15,7 +15,7 @@ public class BrokenLinkTest extends SeWrappers
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
 
-	@Test
+	@Test(priority=1)
 
 	public void brokenLink()
 	{

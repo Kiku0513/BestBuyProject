@@ -13,7 +13,7 @@ public class NegativeTc_SignUp extends SeWrappers
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
 
-	@Test
+	@Test(priority=2)
 
 	public void signUpWithInValidCredentials()
 	{
