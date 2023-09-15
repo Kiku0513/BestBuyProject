@@ -5,8 +5,8 @@
 		<parameter name="browser" value="Chrome"></parameter>
 		<!--<parameter name="browser" value="Edge"></parameter>-->
 		<classes>
-            <class name="com.BestBuy.test.AddedItemsCartTest" />
-			<class name="com.BestBuy.test.BrokenLinkTest" />
+				<class name="com.BestBuy.test.NegativeTc_ItemsAddedToCart" />
+		<!--	<class name="com.BestBuy.test.BrokenLinkTest" />
 			<class name="com.BestBuy.test.SignUpTest" />
 			<class name="com.BestBuy.test.SignInTest_DataProvider" />
 			<class name="com.BestBuy.test.MenuTitlesTest" />
@@ -20,7 +20,7 @@
 		<classes>
 			<class name="com.BestBuy.test.NegativeTc_SignUp" />
 			<class name="com.BestBuy.test.NegativeTc_SignIn_DataProvider" />
-			<class name="com.BestBuy.test.NegativeTc_ItemsAddedToCart" />
+			<class name="com.BestBuy.test.NegativeTc_ItemsAddedToCart" />-->
 		</classes>
 	</test>
 

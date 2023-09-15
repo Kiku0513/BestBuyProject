@@ -28,18 +28,16 @@ public class NegativeTc_SignIn_DataProvider extends SeWrappers
 		XSSFWorkbook workbook=null;
 		try
 		{
-			
-			//FileInputStream fs=new FileInputStream("C:\\Users\\ashis\\Desktop\\ReadDataForLoginInBestBuy.xlsx");
 			workbook= new XSSFWorkbook(new FileInputStream("C:\\Users\\ashis\\Desktop\\ReadDataForLoginInBestBuy.xlsx"));
 			XSSFSheet sheet= workbook.getSheet("LoginInvalid");
 			XSSFRow row= sheet.getRow(0);
-			
+
 			int noOfRows=sheet.getPhysicalNumberOfRows();
-			
+
 			int noOfCells= row.getPhysicalNumberOfCells();
-			
+
 			data= new Object[noOfRows-1][noOfCells]; //data[5][2]
-			
+
 			for(int i=1; i<noOfRows;i++)
 			{
 				for(int j=0; j<noOfCells;j++)
@@ -57,7 +55,7 @@ public class NegativeTc_SignIn_DataProvider extends SeWrappers
 		{
 			workbook.close();
 		}
-		
+
 		return data;
 	}
 	@Test(dataProvider="fetchData")

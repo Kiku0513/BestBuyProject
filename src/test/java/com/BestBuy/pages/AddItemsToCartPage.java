@@ -122,7 +122,6 @@ public class AddItemsToCartPage extends SeWrappers
 		se.actionSendkeys(codehere,codeh);
 		jsClick(updateClick);
 		Thread.sleep(7000);
-		Thread.sleep(2000);
 		se.actionClick(checkout);
 		se.click(conGuest);
 		se.actionSendkeys(email, mail);

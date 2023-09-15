@@ -7,13 +7,14 @@ import com.BestBuy.utils.SeWrappers;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 
 public class BrokenLinkUrl extends SeWrappers
 {
-	
-	public void brokenLinvkValid()
+
+	public void brokenLinvkValid() throws IOException 
 	{	
 		String urlToCheck = "https://www.bestbuy.com/";
 
@@ -37,6 +38,5 @@ public class BrokenLinkUrl extends SeWrappers
 			System.out.println("An exception occurred, indicating a broken link.");
 		}
 
-
 	}
-	}
+}

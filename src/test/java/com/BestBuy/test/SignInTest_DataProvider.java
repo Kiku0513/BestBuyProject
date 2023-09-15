@@ -19,8 +19,8 @@ public class SignInTest_DataProvider extends SeWrappers
 
 	BestBuyWrappers w3=new BestBuyWrappers();
 	SeWrappers se= new SeWrappers();
-	
-	
+
+
 
 	@DataProvider(name="fetchData")
 	public Object[][] readExcel() throws IOException
@@ -29,18 +29,16 @@ public class SignInTest_DataProvider extends SeWrappers
 		XSSFWorkbook workbook=null;
 		try
 		{
-			
-			//FileInputStream fs=new FileInputStream("C:\\Users\\ashis\\Desktop\\ReadDataForLoginInBestBuy.xlsx");
 			workbook= new XSSFWorkbook(new FileInputStream("C:\\Users\\ashis\\eclipse-workspace\\com.BestBuyProject\\ReadDataForLoginInBestBuy.xlsx"));
 			XSSFSheet sheet= workbook.getSheet("LoginValid");
 			XSSFRow row= sheet.getRow(0);
-			
+
 			int noOfRows=sheet.getPhysicalNumberOfRows();
-			
+
 			int noOfCells= row.getPhysicalNumberOfCells();
-			
+
 			data= new Object[noOfRows-1][noOfCells]; //data[5][2]
-			
+
 			for(int i=1; i<noOfRows;i++)
 			{
 				for(int j=0; j<noOfCells;j++)
@@ -58,7 +56,7 @@ public class SignInTest_DataProvider extends SeWrappers
 		{
 			workbook.close();
 		}
-		
+
 		return data;
 	}
 	@Test(dataProvider="fetchData",priority=3)
