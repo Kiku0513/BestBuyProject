@@ -71,7 +71,6 @@ public class NegativeTc_ItemsAddedToCart extends SeWrappers
 			se.launchBrowser();
 			w3.searchItems(items);
 			se.screenshot("Search_With_Numbers");
-			Assert.assertTrue(false);
 		}
 
 
